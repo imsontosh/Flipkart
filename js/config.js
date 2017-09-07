@@ -16,7 +16,7 @@ requirejs.config({
         'Utils': {
             exports: 'Utils'
         },
-        'App':{
+        'App': {
             exports: 'App',
             deps: ['Utils']
         }

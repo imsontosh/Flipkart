@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comment Framework</title>
+  <link rel="stylesheet" href="css/styles-combed.css">
+</head>
+<body data-app-body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Comment Framework</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="add-board" class="section">
+    <div class="container-fluid">
+      <div class="section-content col-xs-12">
+        <div class="row">
+          <div class="col-xs-12">
+            <form action="" class="form-inline" autocomplete="off">
+              <div class="form-group">
+                <label for="name-board" class="control-label"><span class="glyphicon glyphicon-user"></span></label>
+                <input type="text" class="form-control" id="name-board" placeholder="Join the discussion"  name="name-board" required>
+                <span class="help-block hidden"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="boards">
+    <div class="container-fluid">
+      <div class="col-xs-12 section-content board-holder js-board-holder">
+        
+      </div>
+    </div>
+  </section>
+  <footer class="footer navbar-fixed-bottom">
+    <div class="container-fluid">
+      <p class="status-msg text-muted">
+        <span class="text-muted">Status: </span>
+        <span class="status-text js-status-text">App ready to be initialized</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/require.js"></script>
+  <script>
+
+  var appConfig = {
+    'name': 'Flipkart Comment Box',
+    'boards_index': 'boards_index',
+    'selectors': {
+      'board_maker_form': '#add-board form'
+    }
+  }    
+
+  requirejs(['js/config'], function (common) {
+              requirejs(['app/main'], function(){
+
+              });
+          });
+  </script>
+  <script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

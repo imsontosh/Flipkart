@@ -1,0 +1,29 @@
+/* badass CSS for all the elements touched by JS. Best left untouched */
+.js-{
+  
+  &toggle{
+    cursor: pointer;
+    position: relative;
+
+    &:hover{
+      &:before{
+        content: ' ';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  &list-maker{
+    background-color: darken(#c5cae9, 10%);
+    
+  }
+
+  &dragged-over{
+    background-color: #F6F7E7;
+  }
+}

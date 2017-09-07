@@ -1,0 +1,26 @@
+{
+  "name": "flipkart-comment",
+  "version": "1.0.0",
+  "description": "Code submission for Flipkart machine coding round.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {},
+  "author": "Nayak Santosh",
+  "license": "ISC",
+  "bugs": {},
+  "homepage": "",
+  "dependencies": {
+    "grunt-cli": "^0.1.13"
+  },
+  "devDependencies": {
+    "csscomb": "^3.1.8",
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-csscomb": "^3.1.0"
+  }
+}
